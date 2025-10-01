@@ -63,13 +63,16 @@
             }
         }
 
-        echo class_day("Sunday") . "<br>";
-        echo class_day("Monday") . "<br>";
-        echo class_day("Tuesday") . "<br>";
-        echo class_day("Wednesday") . "<br>";
-        echo class_day("Thursday") . "<br>";
-        echo class_day("Friday") . "<br>";
-        echo class_day("Saturday") . "<br>";
+        $i = 0;
+        $daysCount = count($DaysList);
+
+        do {
+            echo class_day($DaysList[$i]) . "<br>";
+            $i++;
+        } while ($i < $daysCount);
+
+
+
 
         ?>
     </body>
