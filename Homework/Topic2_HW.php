@@ -45,7 +45,7 @@
                     break;
 
                 case "Wednesday": 
-                    return "Today is Wednesday and you have no classes today!";
+                    return "Today is Wednesday and you have no classes today.";
                     break;
 
                     case "Thursday":
@@ -70,9 +70,6 @@
             echo class_day($DaysList[$i]) . "<br>";
             $i++;
         } while ($i < $daysCount);
-
-
-
 
         ?>
     </body>
